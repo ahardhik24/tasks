@@ -5,11 +5,11 @@ function App(): React.JSX.Element {
     return (
         <div className="App">
             <header className="App-header">
-                HARDHIKS UD CISC275 with React Hooks and TypeScript
+                Hello World HARDHIKS UD CISC275 with React Hooks and TypeScript
             </header>
             <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
+                Edit <code>src/App.tsx</code> and save. This page
+                will automatically reload.
             </p>
         </div>
     );
