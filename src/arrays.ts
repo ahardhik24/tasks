@@ -121,19 +121,19 @@ export function injectPositive(values: number[]): number[] {
     );
 
     if (firstNegativeIndex === -1) {
-        // No negative numbers found: sum all numbers and append to the end
+        
         const sum = values.reduce(
             (total: number, num: number): number => total + num,
             0,
         );
         return [...values, sum];
     } else {
-        // Sum only the numbers before the first negative number
+        
         const sum = values
             .slice(0, firstNegativeIndex)
             .reduce((total: number, num: number): number => total + num, 0);
 
-        // Clone and insert immediately after the negative number using splice
+        
         const result = [...values];
         result.splice(firstNegativeIndex + 1, 0, sum);
         return result;
