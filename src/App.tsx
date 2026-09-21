@@ -1,7 +1,15 @@
 import React from "react";
-import { Button, Container, Row, Col } from "react-bootstrap";
 import "./App.css";
-import dogImage from "./assets/dog.jpg";
+import { ChangeType } from "./components/ChangeType";
+import { RevealAnswer } from "./components/RevealAnswer";
+import { StartAttempt } from "./components/StartAttempt";
+import { TwoDice } from "./components/TwoDice";
+import { CycleHoliday } from "./components/CycleHoliday";
+import { Counter } from "./components/Counter";
+import { DoubleHalf } from "./bad-components/DoubleHalf";
+import { ColoredBox } from "./bad-components/ColoredBox";
+import { ShoveBox } from "./bad-components/ShoveBox";
+import { ChooseTeam } from "./bad-components/ChooseTeam";
 
 function App(): React.JSX.Element {
     return (
@@ -9,59 +17,26 @@ function App(): React.JSX.Element {
             <header className="App-header">
                 Hello World HARDHIKS UD CISC275 with React Hooks and TypeScript
             </header>
-
-            <h1>First Header</h1>
-
-            <ul>
-                <li>Ice cream</li>
-                <li>Pizza</li>
-                <li>Cookies</li>
-            </ul>
-
-            <img src={dogImage} alt="a picture of a dog" />
-
-            <div>
-                <Button
-                    variant="primary"
-                    onClick={() => {
-                        console.log("Hello World!");
-                    }}
-                >
-                    Log Hello World
-                </Button>
-            </div>
-
-            <Container>
-                <Row>
-                    <Col>
-                        <div className="column-content">First column.</div>
-                        <div
-                            aria-label="red box"
-                            style={{
-                                width: "50px",
-                                height: "50px",
-                                backgroundColor: "red",
-                            }}
-                        />
-                    </Col>
-                    <Col>
-                        <div className="column-content">Second column.</div>
-                        <div
-                            aria-label="red box"
-                            style={{
-                                width: "50px",
-                                height: "50px",
-                                backgroundColor: "red",
-                            }}
-                        />
-                    </Col>
-                </Row>
-            </Container>
-
-            <p>
-                Edit <code>src/App.tsx</code> and save. This page will
-                automatically reload.
-            </p>
+            <hr></hr>
+            <DoubleHalf></DoubleHalf>
+            <hr></hr>
+            <ChooseTeam></ChooseTeam>
+            <hr></hr>
+            <ColoredBox></ColoredBox>
+            <hr></hr>
+            <ShoveBox></ShoveBox>
+            <hr></hr>
+            <Counter></Counter>
+            <hr />
+            <RevealAnswer></RevealAnswer>
+            <hr />
+            <StartAttempt></StartAttempt>
+            <hr />
+            <TwoDice></TwoDice>
+            <hr />
+            <ChangeType></ChangeType>
+            <hr />
+            <CycleHoliday></CycleHoliday>
         </div>
     );
 }
